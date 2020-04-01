@@ -2,7 +2,10 @@ class Dog
   def initialize(name, breed)
     @name = name
     @breed = breed
+    if breed.length == 0 
+      return "Mutt"
   end
+end
   
   def name=(name, breed)
     @name = name
@@ -11,10 +14,6 @@ class Dog
   
   def name_breed 
     @name
-   if @breed.length > 0
    @breed
- else 
-   return "Mutt"
-  end
  end
 end
