@@ -11,6 +11,10 @@ class Dog
   
   def name_breed 
     @name
-    @breed
+   if @breed.length > 0
+   @breed
+ else 
+   return "Mutt"
+
  end
 end
